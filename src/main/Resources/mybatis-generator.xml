@@ -4,10 +4,19 @@
                 "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
+<!-- 参考文档：http://www.cnblogs.com/wy2325/p/5769623.html -->
+
 <!--导入属性配置-->
 <properties resource="generator.properties"></properties>
 
-    <!-- 生成命令：mybatis-generator:generate -e -->
+<!-- 生成命令：mybatis-generator:generate -e -->
+
+<!-- 生成的Java文件的编码 -->
+<property name="javaFileEncoding" value="UTF-8"/>
+<!-- 格式化java代码 -->
+<property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+<!-- 格式化XML代码 -->
+<property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
 
 <!--指定特定数据库的jdbc驱动jar包的位置-->
 <!--<classPathEntry location="${jdbc.driverLocation}"/>-->
