@@ -7,6 +7,8 @@
 <!--导入属性配置-->
 <properties resource="generator.properties"></properties>
 
+    <!-- 生成命令：mybatis-generator:generate -e -->
+
 <!--指定特定数据库的jdbc驱动jar包的位置-->
 <!--<classPathEntry location="${jdbc.driverLocation}"/>-->
 
