@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
  * Created by ChenYu on 2017/1/19.
  */
 @Service
+//@Transactional
 public class UserServiceImpl implements UserService {
 
     @Autowired

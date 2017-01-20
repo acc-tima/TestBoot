@@ -23,6 +23,6 @@ public class TestController {
 
         userService.insert(user1);
         System.out.println(user.toString());
-        return user.toString();
+        return user1.toString();
     }
 }

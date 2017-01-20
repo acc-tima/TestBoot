@@ -1,6 +1,7 @@
 package com.tima.test.application.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.bind.RelaxedPropertyResolver;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
@@ -16,6 +17,7 @@ import java.sql.SQLException;
  */
 @Configuration
 @EnableTransactionManagement
+@MapperScan("com.tima.test.dao.dao")
 public class DruidDataSourceConfig implements EnvironmentAware {
     private RelaxedPropertyResolver propertyResolver;
 

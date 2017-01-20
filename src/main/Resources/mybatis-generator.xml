@@ -4,7 +4,7 @@
                 "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-<!-- 参考文档：http://www.cnblogs.com/wy2325/p/5769623.html -->
+<!-- 参考文档：http://www.cnblogs.com/wy2325/p/5769623.html  or  http://blog.csdn.net/isea533/article/details/42102297-->
 
 <!--导入属性配置-->
 <properties resource="generator.properties"></properties>
@@ -84,6 +84,7 @@
            enableCountByExample="false" enableUpdateByExample="false"
            enableDeleteByExample="false" enableSelectByExample="false"
            selectByExampleQueryId="false">
+        <!-- 使用数据库自增id -->
         <generatedKey column="id" sqlStatement="MySql" identity="true" />
     </table>
 
