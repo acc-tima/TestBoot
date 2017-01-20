@@ -17,7 +17,6 @@ import java.sql.SQLException;
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan("com.tima.test.dao.dao")
 public class DruidDataSourceConfig implements EnvironmentAware {
     private RelaxedPropertyResolver propertyResolver;
 
