@@ -16,7 +16,6 @@ import java.sql.SQLException;
  * Created by ChenYu on 2017/1/19.
  */
 @Configuration
-@EnableTransactionManagement
 public class DruidDataSourceConfig implements EnvironmentAware {
     private RelaxedPropertyResolver propertyResolver;
 
